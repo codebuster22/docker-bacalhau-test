@@ -1,5 +1,4 @@
-FROM node:18-alpine
-WORKDIR .
+FROM node
 COPY . .
 RUN yarn install --production
 CMD ["node", "index.js"]
